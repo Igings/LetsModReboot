@@ -17,7 +17,7 @@ public class ItemLMRB extends Item
         super();
         //this.maxStackSize=1;
     }
-//test
+//tes
     @Override
     public String getUnlocalizedName()
     {
