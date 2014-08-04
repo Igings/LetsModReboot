@@ -1,6 +1,7 @@
 package com.igings.letsmodreboot;
 
 import com.igings.letsmodreboot.handler.ConfigurationHandler;
+import com.igings.letsmodreboot.init.ModBlocks;
 import com.igings.letsmodreboot.init.ModItems;
 import com.igings.letsmodreboot.proxy.IProxy;
 import com.igings.letsmodreboot.reference.Reference;
@@ -31,6 +32,7 @@ public class LetsModReboot
         LogHelper.info ("Pre-Initialisation complete");
 
         ModItems.init();
+        ModBlocks.init();
     }
 
     @Mod.EventHandler
