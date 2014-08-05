@@ -1,20 +1,23 @@
-package com.igings.letsmodreboot.block;
+package com.igings.letsmodreboot.handler;
 
-import com.igings.letsmodreboot.handler.BlockGlassHandler;
+import com.igings.letsmodreboot.block.BlockLMRB;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.world.IBlockAccess;
 
-public class BlockGlass extends BlockGlassHandler
+public class BlockGlassHandler extends BlockLMRB
 {
-        public BlockGlass()
-        {
-            super();
-            this.setBlockName("glass");
-            //this.setStepSound(soundTypeGlass);
-            //this.setResistance(100.0F);
-            //this.setHardness(2.8F);
-            //this.setHarvestLevel("sword",0);
-            //this.setLightOpacity(0);
-        }
-/*
+
+    public BlockGlassHandler()
+    {
+        super();
+        this.setLightOpacity(1);
+        this.setStepSound(soundTypeGlass);
+        this.setResistance(10.0F);
+        this.setHardness(1);
+        this.setHarvestLevel("sword",0);
+    }
+
     @Override
     @SideOnly(Side.CLIENT)
     public boolean shouldSideBeRendered (IBlockAccess iBlockAccess, int x, int y, int z, int side)
@@ -40,5 +43,4 @@ public class BlockGlass extends BlockGlassHandler
     {
         return false;
     }
-*/
 }
