@@ -1,6 +1,7 @@
 package com.igings.letsmodreboot.init;
 
 import com.igings.letsmodreboot.block.BlockFlag;
+import com.igings.letsmodreboot.block.BlockGlass;
 import com.igings.letsmodreboot.block.BlockLMRB;
 import com.igings.letsmodreboot.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -9,10 +10,12 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class ModBlocks
 {
     public static final BlockLMRB flag = new BlockFlag();
+    public static final BlockLMRB glass = new BlockGlass();
 
     public static void init()
     {
         GameRegistry.registerBlock(flag, "flag");
+        GameRegistry.registerBlock(glass, "glass");
     }
 
 }
