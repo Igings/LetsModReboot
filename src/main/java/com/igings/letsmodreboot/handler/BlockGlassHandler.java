@@ -15,7 +15,7 @@ public class BlockGlassHandler extends BlockLMRB
         this.setStepSound(soundTypeGlass);
         this.setResistance(10.0F);
         this.setHardness(1);
-        this.setHarvestLevel("sword",0);
+        this.setHarvestLevel("pickaxe",0);
     }
 
     @Override
