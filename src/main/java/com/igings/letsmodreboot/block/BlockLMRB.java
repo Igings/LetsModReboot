@@ -1,6 +1,7 @@
 package com.igings.letsmodreboot.block;
 
 
+import com.igings.letsmodreboot.creativetab.CreativeTabLMRB;
 import com.igings.letsmodreboot.reference.Textures;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -19,6 +20,7 @@ public class BlockLMRB extends Block
     public BlockLMRB()
     {
         this(Material.rock);
+        this.setCreativeTab(CreativeTabLMRB.LMRB_TAB);
     }
 
     @Override

@@ -1,6 +1,7 @@
 package com.igings.letsmodreboot.item;
 
 
+import com.igings.letsmodreboot.creativetab.CreativeTabLMRB;
 import com.igings.letsmodreboot.reference.Reference;
 import com.igings.letsmodreboot.reference.Textures;
 import cpw.mods.fml.relauncher.Side;
@@ -15,6 +16,7 @@ public class ItemLMRB extends Item
     public ItemLMRB()
     {
         super();
+        this.setCreativeTab(CreativeTabLMRB.LMRB_TAB);
         //this.maxStackSize=1;
     }
 //te
