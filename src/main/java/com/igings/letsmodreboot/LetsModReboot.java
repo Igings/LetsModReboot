@@ -12,6 +12,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.oredict.OreDictionary;
 
 
 @Mod(modid= Reference.MOD_ID,name=Reference.MOD_NAME, version=Reference.VERSION,guiFactory = Reference.GUI_FACTORY_CLASS)
@@ -35,14 +36,23 @@ public class LetsModReboot
         ModBlocks.init();
     }
 
+
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {//Initialisation for GUI, TE, crafting, other event handlers
         LogHelper.info ("Initialisation complete");
     }
+
+
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {//Used for anything after other mods are loaded
         LogHelper.info ("Post-Initialisation complete");
+
+        //Returns all ore-dictionaried items
+        for (String oreName: OreDictionary.getOreNames())
+        {
+            LogHelper.info(oreName);
+        }
     }
 }
