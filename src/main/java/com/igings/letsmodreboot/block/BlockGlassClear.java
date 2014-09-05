@@ -2,12 +2,12 @@ package com.igings.letsmodreboot.block;
 
 import com.igings.letsmodreboot.handler.BlockGlassHandler;
 
-public class BlockGlass extends BlockGlassHandler
+public class BlockGlassClear extends BlockGlassHandler
 {
-        public BlockGlass()
+        public BlockGlassClear()
         {
             super();
-            this.setBlockName("glass");
+            this.setBlockName("glassClear");
             //this.setStepSound(soundTypeGlass);
             //this.setResistance(100.0F);
             //this.setHardness(2.8F);

@@ -3,6 +3,7 @@ package com.igings.letsmodreboot;
 import com.igings.letsmodreboot.handler.ConfigurationHandler;
 import com.igings.letsmodreboot.init.ModBlocks;
 import com.igings.letsmodreboot.init.ModItems;
+import com.igings.letsmodreboot.init.Recipes;
 import com.igings.letsmodreboot.proxy.IProxy;
 import com.igings.letsmodreboot.reference.Reference;
 import com.igings.letsmodreboot.utility.LogHelper;
@@ -40,6 +41,8 @@ public class LetsModReboot
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {//Initialisation for GUI, TE, crafting, other event handlers
+        Recipes.init();
+
         LogHelper.info ("Initialisation complete");
     }
 

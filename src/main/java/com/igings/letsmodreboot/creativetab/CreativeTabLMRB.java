@@ -1,6 +1,5 @@
 package com.igings.letsmodreboot.creativetab;
 
-import com.igings.letsmodreboot.block.BlockGlass;
 import com.igings.letsmodreboot.init.ModItems;
 import com.igings.letsmodreboot.reference.Reference;
 import net.minecraft.creativetab.CreativeTabs;
