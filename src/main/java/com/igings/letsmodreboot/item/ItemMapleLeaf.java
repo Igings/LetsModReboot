@@ -13,7 +13,6 @@ import java.util.List;
 
 public class ItemMapleLeaf extends ItemLMRB
 {
-    String blockName;
 
     public ItemMapleLeaf()
     {

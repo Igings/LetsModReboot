@@ -18,6 +18,7 @@ public class BlockGlassHandler extends BlockLMRB
         this.setHarvestLevel("pickaxe",0);
     }
 
+
     @Override
     @SideOnly(Side.CLIENT)
     public boolean shouldSideBeRendered (IBlockAccess iBlockAccess, int x, int y, int z, int side)
@@ -29,7 +30,7 @@ public class BlockGlassHandler extends BlockLMRB
     @SideOnly(Side.CLIENT)
     public int getRenderBlockPass()
     {
-        return 0;
+        return 1;
     }
 
     @Override

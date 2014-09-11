@@ -1,9 +1,6 @@
 package com.igings.letsmodreboot.init;
 
-import com.igings.letsmodreboot.block.BlockFlag;
-import com.igings.letsmodreboot.block.BlockGlassClear;
-import com.igings.letsmodreboot.block.BlockGlassFace;
-import com.igings.letsmodreboot.block.BlockLMRB;
+import com.igings.letsmodreboot.block.*;
 import com.igings.letsmodreboot.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -13,12 +10,14 @@ public class ModBlocks
     public static final BlockLMRB flag = new BlockFlag();
     public static final BlockLMRB glassClear = new BlockGlassClear();
     public static final BlockLMRB glassFace = new BlockGlassFace();
+    public static final BlockLMRB glassHex = new BlockGlassHex();
 
     public static void init()
     {
         GameRegistry.registerBlock(flag, "flag");
         GameRegistry.registerBlock(glassClear, "glass");
         GameRegistry.registerBlock(glassFace, "glassFace");
+        GameRegistry.registerBlock(glassHex, "glassHex");
     }
 
 }
